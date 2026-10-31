@@ -1,0 +1,51 @@
+{
+  "dataset": "Generated synthetic glyph strokes; no real client data",
+  "method": "Global Otsu plus area-filtered 4-connected components",
+  "minimum_area": 5,
+  "cases": [
+    {
+      "case": "clean",
+      "seed": 41,
+      "threshold": 67,
+      "components": 70,
+      "method": {
+        "intersection_over_union": 0.9961458642158316,
+        "precision": 0.9961458642158316,
+        "recall": 1.0,
+        "true_positive_pixels": 3360,
+        "false_positive_pixels": 13,
+        "false_negative_pixels": 0
+      },
+      "fixed_threshold_baseline": {
+        "intersection_over_union": 0.9770282058738006,
+        "precision": 0.9770282058738006,
+        "recall": 1.0,
+        "true_positive_pixels": 3360,
+        "false_positive_pixels": 79,
+        "false_negative_pixels": 0
+      }
+    },
+    {
+      "case": "shadowed",
+      "seed": 82,
+      "threshold": 169,
+      "components": 82,
+      "method": {
+        "intersection_over_union": 0.2273803884414969,
+        "precision": 0.2273803884414969,
+        "recall": 1.0,
+        "true_positive_pixels": 3360,
+        "false_positive_pixels": 11417,
+        "false_negative_pixels": 0
+      },
+      "fixed_threshold_baseline": {
+        "intersection_over_union": 0.7004716981132075,
+        "precision": 0.7147232553051849,
+        "recall": 0.9723214285714286,
+        "true_positive_pixels": 3267,
+        "false_positive_pixels": 1304,
+        "false_negative_pixels": 93
+      }
+    }
+  ]
+}
